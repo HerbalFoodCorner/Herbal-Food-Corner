@@ -35,6 +35,18 @@
       "image": "images/menu-garlic-porridge.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "sago-drink-honey",
+      "category": "Kanda",
+      "name_en": "Sago Drink (Honey)",
+      "name_si": "පැණි සව්",
+      "name_ta": "",
+      "description_en": "",
+      "price": "150",
+      "image": "images/menu-sago-drink-honey.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
