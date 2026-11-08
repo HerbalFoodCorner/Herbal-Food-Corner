@@ -23,6 +23,18 @@
       "image": "images/menu-ragi-porridge.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "garlic-porridge",
+      "category": "Kanda",
+      "name_en": "Garlic Porridge",
+      "name_si": "සුදුලූණු කැඳ",
+      "name_ta": "",
+      "description_en": "",
+      "price": "140",
+      "image": "images/menu-garlic-porridge.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
