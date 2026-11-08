@@ -17,6 +17,15 @@
       "note": "",
       "image": "images/gallery-gallery-1794133246507.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1794152209795",
+      "category": "plants",
+      "title": "Hathawariya",
+      "date": "",
+      "note": "",
+      "image": "images/gallery-gallery-1794152209795.jpg",
+      "active": true
     }
   ]
 }
