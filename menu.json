@@ -47,6 +47,18 @@
       "image": "images/menu-sago-jaggery-drink.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "chick-peas",
+      "category": "Food",
+      "name_en": "Chick peas",
+      "name_si": "කඩල",
+      "name_ta": "",
+      "description_en": "",
+      "price": "150",
+      "image": "images/menu-chick-peas.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
