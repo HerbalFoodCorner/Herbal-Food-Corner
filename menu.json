@@ -11,6 +11,18 @@
       "image": "",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "ragi-porridge",
+      "category": "Kanda",
+      "name_en": "Ragi Porridge",
+      "name_si": "කුරක්කන් කැඳ",
+      "name_ta": "",
+      "description_en": "",
+      "price": "140",
+      "image": "images/menu-ragi-porridge.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
