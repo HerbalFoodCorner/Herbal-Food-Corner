@@ -119,6 +119,18 @@
       "image": "images/menu-rice-curry.webp",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "noodles",
+      "category": "Food",
+      "name_en": "Noodles",
+      "name_si": "නූඩ්ල්ස්",
+      "name_ta": "",
+      "description_en": "",
+      "price": "220",
+      "image": "images/menu-noodles.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
