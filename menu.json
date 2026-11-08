@@ -83,6 +83,18 @@
       "image": "images/menu-milk-rice.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "manioc",
+      "category": "Food",
+      "name_en": "Manioc",
+      "name_si": "මඤ්ඤොක්කා",
+      "name_ta": "",
+      "description_en": "",
+      "price": "140",
+      "image": "images/menu-manioc.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
