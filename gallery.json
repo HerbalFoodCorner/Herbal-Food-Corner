@@ -53,6 +53,15 @@
       "note": "",
       "image": "images/gallery-gallery-1794152583596.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1794152612966",
+      "category": "plants",
+      "title": "Monarakudumbiya",
+      "date": "",
+      "note": "",
+      "image": "images/gallery-gallery-1794152612966.jpg",
+      "active": true
     }
   ]
 }
