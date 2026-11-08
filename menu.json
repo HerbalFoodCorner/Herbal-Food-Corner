@@ -71,6 +71,18 @@
       "image": "images/menu-kithul-flour-porridge.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "milk-rice",
+      "category": "Food",
+      "name_en": "Milk Rice",
+      "name_si": "කිරිබත්",
+      "name_ta": "",
+      "description_en": "",
+      "price": "120",
+      "image": "images/menu-milk-rice.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
