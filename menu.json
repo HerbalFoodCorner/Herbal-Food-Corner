@@ -59,6 +59,18 @@
       "image": "images/menu-chick-peas.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "kithul-flour-porridge",
+      "category": "Drinks",
+      "name_en": "Kithul Flour Porridge",
+      "name_si": "කිතුල් පිටි කැඳ",
+      "name_ta": "",
+      "description_en": "",
+      "price": "150",
+      "image": "images/menu-kithul-flour-porridge.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
