@@ -71,6 +71,15 @@
       "note": "",
       "image": "images/gallery-gallery-1794152639404.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1794152788098",
+      "category": "plants",
+      "title": "Welpenela",
+      "date": "",
+      "note": "",
+      "image": "images/gallery-gallery-1794152788098.jpg",
+      "active": true
     }
   ]
 }
