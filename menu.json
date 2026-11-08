@@ -1,3 +1,16 @@
 {
-  "items": []
+  "items": [
+    {
+      "id": "herbal-leaf-porridge",
+      "category": "Kanda",
+      "name_en": "Herbal Leaf Porridge",
+      "name_si": "කොළ කැඳ",
+      "name_ta": "",
+      "description_en": "",
+      "price": "120",
+      "image": "",
+      "active": true,
+      "featured": false
+    }
+  ]
 }
