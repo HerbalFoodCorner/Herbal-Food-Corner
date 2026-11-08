@@ -5,3 +5,14 @@
 @media(max-width:560px){.site-header{align-items:flex-start;flex-direction:column}.site-header nav{gap:18px}.hero{padding:42px 22px}.hero-art{height:250px}.bowl{width:230px;height:135px}.sun{width:210px;height:210px}.trust-strip{gap:18px}.trust-strip strong{font-size:12px}.trust-strip span{font-size:9px}.section{padding:50px 20px}.menu-grid{grid-template-columns:1fr 1fr;gap:10px}.food-illustration{height:110px}.card-content{padding:13px}.card-content h3{font-size:16px}.feature-band{padding:42px 22px}.feature-emoji{font-size:55px;padding:18px}.section-heading h2,.location-section h2,.feature-band h2{font-size:27px}.contact-grid{grid-template-columns:1fr;padding:35px 20px}.page-hero{padding:45px 20px}.article-layout{padding:40px 22px}.footer-links{gap:14px}}
 
 .language-switch{display:inline-flex;gap:4px;margin-left:4px;align-items:center}.language-switch a{font-size:11px!important;padding:5px 8px;border:1px solid #dce5d6;border-radius:20px;text-decoration:none!important;color:#174b32!important;background:#fbfcf7}.language-switch a:hover{background:#d9e9a2}
+
+/* Online ordering and editable menu prices */
+.order-section{background:#fbfaf2}.order-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.price-line{margin-top:10px!important;padding:7px 10px;background:#f3f7e9;border-radius:9px;color:#174b32!important;font-weight:700}.price-line strong{color:#8a7110}.order-actions .btn{min-width:190px}
+
+/* Real product photo gallery: add files to the images folder */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.gallery-grid figure{margin:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 8px 25px #244d2410}.gallery-frame{height:260px;position:relative;background:#f2f7e8;display:flex;align-items:center;justify-content:center}.gallery-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.photo-fallback{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:50px;color:var(--green)}.photo-fallback small{font-size:11px;font-weight:700}.gallery-grid figcaption{padding:13px 16px;font-weight:800;color:var(--green)}@media(max-width:650px){.gallery-grid{grid-template-columns:1fr}.gallery-frame{height:230px}}
+
+/* Live menu cards */
+.menu-photo{display:block;width:100%;height:210px;object-fit:cover;border-radius:14px 14px 0 0;background:#edf4e9}
+.menu-card{overflow:hidden}
+#live-menu-grid .card-content{padding:18px}
