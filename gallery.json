@@ -44,6 +44,15 @@
       "note": "",
       "image": "images/gallery-gallery-1794152549123.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1794152583596",
+      "category": "plants",
+      "title": "Heenbovitiya",
+      "date": "",
+      "note": "",
+      "image": "images/gallery-gallery-1794152583596.jpg",
+      "active": true
     }
   ]
 }
