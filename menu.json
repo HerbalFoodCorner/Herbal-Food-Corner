@@ -59,6 +59,18 @@
       "image": "images/menu-chick-peas.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "chickpeas",
+      "category": "Food",
+      "name_en": "Chickpeas",
+      "name_si": "කඩල",
+      "name_ta": "",
+      "description_en": "",
+      "price": "150",
+      "image": "images/menu-chickpeas.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
