@@ -26,6 +26,15 @@
       "note": "",
       "image": "images/gallery-gallery-1794152209795.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1794152323140",
+      "category": "plants",
+      "title": "Karapincha",
+      "date": "",
+      "note": "",
+      "image": "images/gallery-gallery-1794152323140.jpg",
+      "active": true
     }
   ]
 }
