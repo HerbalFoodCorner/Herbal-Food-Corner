@@ -16,3 +16,106 @@
 .menu-photo{display:block;width:100%;height:210px;object-fit:cover;border-radius:14px 14px 0 0;background:#edf4e9}
 .menu-card{overflow:hidden}
 #live-menu-grid .card-content{padding:18px}
+
+/* Herbal Food Corner - Premium Gallery Design */
+
+#gallery {
+  background: linear-gradient(180deg, #fbfaf2 0%, #ffffff 100%);
+}
+
+#gallery .section-heading {
+  margin-bottom: 42px;
+}
+
+#gallery .section-heading h2 {
+  letter-spacing: -0.7px;
+}
+
+.gallery-category {
+  margin: 38px 0 22px;
+  padding: 13px 18px;
+  background: #eff5df;
+  border-left: 4px solid #d6b875;
+  border-radius: 10px;
+  color: #174b32;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.gallery-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 35px;
+}
+
+.gallery-grid figure,
+.gallery-card {
+  border: 1px solid #e5eadf;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 25px #174b3210;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.gallery-grid figure:hover,
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 32px #174b3220;
+}
+
+.gallery-frame {
+  height: 250px;
+  overflow: hidden;
+  background: #eff5df;
+}
+
+.gallery-frame img {
+  transition: transform .5s ease;
+}
+
+.gallery-grid figure:hover .gallery-frame img,
+.gallery-card:hover .gallery-frame img {
+  transform: scale(1.06);
+}
+
+.gallery-grid figcaption {
+  padding: 16px 18px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.gallery-grid figcaption small {
+  display: block;
+  margin-top: 6px;
+  color: #8b8535;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+@media(max-width:850px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media(max-width:560px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .gallery-frame {
+    height: 155px;
+  }
+
+  .gallery-grid figcaption {
+    padding: 11px;
+    font-size: 12px;
+  }
+
+  .gallery-category {
+    font-size: 18px;
+  }
+}
+
