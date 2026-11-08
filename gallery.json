@@ -62,6 +62,15 @@
       "note": "",
       "image": "images/gallery-gallery-1794152612966.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1794152639404",
+      "category": "plants",
+      "title": "Polpala",
+      "date": "",
+      "note": "",
+      "image": "images/gallery-gallery-1794152639404.jpg",
+      "active": true
     }
   ]
 }
