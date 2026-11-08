@@ -107,6 +107,18 @@
       "image": "images/menu-pasta.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "rice-curry",
+      "category": "Food",
+      "name_en": "Rice & Curry",
+      "name_si": "බත් සමඟ ව්‍යංජන",
+      "name_ta": "",
+      "description_en": "",
+      "price": "240",
+      "image": "images/menu-rice-curry.webp",
+      "active": true,
+      "featured": false
     }
   ]
 }
