@@ -1,33 +1,77 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Herbal Food Corner – Menu Admin</title><style>
-:root{--green:#174b32;--light:#eef6ec;--yellow:#e8c84a}*{box-sizing:border-box}body{margin:0;background:#f5f7f3;color:#203328;font:16px system-ui,Arial,sans-serif}.wrap{max-width:850px;margin:auto;padding:20px}.panel{background:#fff;border:1px solid #e1e9df;border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 5px 20px #173d2410}h1,h2{color:var(--green)}h1{font-size:25px}.muted,small{color:#607266}.notice{background:#fff8dc;padding:13px;border-radius:10px;font-size:14px}.row{display:flex;gap:12px;flex-wrap:wrap}.row>*{flex:1;min-width:180px}label{display:block;font-weight:650;margin:12px 0 5px}input,select,textarea{width:100%;padding:12px;border:1px solid #cbd8cc;border-radius:9px;font:inherit}button{border:0;border-radius:10px;padding:12px 17px;background:var(--green);color:white;font-weight:700;margin:8px 6px 0 0;cursor:pointer}button.secondary{background:#e9f1e7;color:var(--green)}button.danger{background:#a52d2d}.item{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #e8eee7}.item img{width:66px;height:66px;object-fit:cover;border-radius:9px;background:#eef4eb}.item .info{flex:1;min-width:0}.item .info b{display:block}.hidden{display:none}.status{padding:10px;border-radius:8px;background:#edf6eb;margin-top:10px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-</style></head><body><main class="wrap"><div class="top"><div><h1>🌿 Herbal Food Corner</h1><p class="muted">Menu Admin Dashboard</p></div><a href="./">View website</a></div>
-<div class="panel"><h2>Admin access</h2><p class="notice">GitHub Fine-grained access token එක මෙහි පමණක් ඇතුළත් කරන්න. අපි එය save කරන්නේ නැහැ; page එක refresh කළාම නැවත ඇතුළත් කරන්න වෙනවා. Token එක කිසිවෙකුට share කරන්න එපා.</p><label>GitHub access token</label><input id="token" type="password" autocomplete="off" placeholder="github_pat_..."><button id="connect">Connect</button><p class="muted" id="connectStatus">Connect කළ පසු menu එක load වේ.</p></div>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Herbal Food Corner - Menu Admin</title>
+<style>
+:root{--green:#174b32;--light:#eef6ec;--yellow:#e8c84a}*{box-sizing:border-box}body{margin:0;background:#f5f7f3;color:#203328;font:16px system-ui,Arial,sans-serif}.wrap{max-width:850px;margin:auto;padding:18px}.panel{background:#fff;border:1px solid #e1e9df;border-radius:16px;padding:18px;margin:15px 0;box-shadow:0 5px 20px #173d2410}h1,h2{color:var(--green)}h1{font-size:24px}.muted,small{color:#607266}.notice{background:#fff8dc;padding:12px;border-radius:9px;font-size:14px}.row{display:flex;gap:12px;flex-wrap:wrap}.row>*{flex:1;min-width:180px}label{display:block;font-weight:650;margin:12px 0 5px}input,select,textarea{width:100%;padding:11px;border:1px solid #cbd8cc;border-radius:9px;font:inherit}input[type=checkbox]{width:auto}button{border:0;border-radius:9px;padding:11px 16px;background:var(--green);color:#fff;font-weight:700;margin:8px 6px 0 0;cursor:pointer}button.secondary{background:#e9f1e7;color:var(--green)}button.danger{background:#a52d2d}button:disabled{opacity:.5}.hidden{display:none}.status{padding:10px;border-radius:8px;background:#edf6eb;margin-top:10px;overflow-wrap:anywhere}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.item{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid #e8eee7}.item img{width:62px;height:62px;object-fit:cover;border-radius:8px;background:#eef4eb}.item .info{flex:1;min-width:0}.item .info b{display:block;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="top"><div><h1>Herbal Food Corner</h1><p class="muted">Menu Admin Dashboard</p></div><a href="./">View website</a></div>
+<div class="panel"><h2>Admin access</h2><p class="notice">GitHub Fine-grained token එක මෙහි පමණක් ඇතුළත් කරන්න. Token එක browser එකෙන් පිටතට යවන්නේ නැහැ; page එක refresh කළාම නැවත ඇතුළත් කරන්න වෙනවා. Token එක කිසිවෙකුට share කරන්න එපා.</p>
+<label>GitHub access token</label><input id="token" type="password" autocomplete="off" placeholder="github_pat_..."><button id="connect">Connect</button><p class="muted" id="connectStatus">Connect කළ පසු menu එක load වේ.</p></div>
 <section id="manager" class="hidden">
-<div class="panel"><h2 id="formTitle">Add a new menu item</h2><input id="editId" type="hidden"><div class="row"><div><label>Category</label><select id="category"><option>Kanda</option><option>Food</option><option>Drink</option><option>Other</option></select></div><div><label>Price (LKR)</label><input id="price" placeholder="e.g. Rs. 250"></div></div>
-<div class="row"><div><label>Name – English</label><input id="name_en" required></div><div><label>නම – සිංහල</label><input id="name_si"></div><div><label>பெயர் – தமிழ்</label><input id="name_ta"></div></div>
+<div class="panel"><h2 id="formTitle">Add a new menu item</h2><input id="editId" type="hidden">
+<div class="row"><div><label>Category</label><select id="category"><option>Kanda</option><option>Food</option><option>Drink</option><option>Other</option></select></div><div><label>Price (LKR)</label><input id="price" placeholder="e.g. Rs. 250"></div></div>
+<div class="row"><div><label>Name - English</label><input id="name_en"></div><div><label>නම - සිංහල</label><input id="name_si"></div><div><label>பெயர் - தமிழ்</label><input id="name_ta"></div></div>
 <label>Description</label><textarea id="description_en" rows="2" placeholder="Short description (English)"></textarea>
-<label>Food photo</label><input id="photo" type="file" accept="image/jpeg,image/png,image/webp"><small>JPG / PNG / WebP. Use a clear photo, preferably under 1 MB.</small><p id="photoStatus" class="muted">No new photo selected. Existing photo will be kept when editing.</p>
-<label><input id="featured" type="checkbox" style="width:auto"> Featured item</label><label><input id="active" type="checkbox" checked style="width:auto"> Show on website</label>
+<label>Food photo</label><input id="photo" type="file" accept="image/jpeg,image/png,image/webp"><small>JPG / PNG / WebP. Maximum 2 MB.</small><p id="photoStatus" class="muted">No new photo selected. Existing photo will be kept when editing.</p>
+<label><input id="featured" type="checkbox"> Featured item</label><label><input id="active" type="checkbox" checked> Show on website</label>
 <button id="save">Save item</button><button class="secondary" id="clear">Clear form</button><p id="saveStatus" class="status hidden"></p></div>
-<div class="panel"><div class="top"><h2>Current menu</h2><button class="secondary" id="reload">Refresh</button></div><div id="items"></div></div></section>
-<p class="muted">This admin page edits menu.json and uploads photos to your GitHub repository. GitHub Pages publishes the changes automatically after commit.</p></main>
+<div class="panel"><div class="top"><h2>Current menu</h2><button class="secondary" id="reload">Refresh</button></div><div id="items"></div></div>
+</section>
+<p class="muted">This page edits menu.json and uploads photos to your GitHub repository. GitHub Pages publishes committed changes automatically.</p>
+</main>
 <script>
-const OWNER='herbalfoodcorner', REPO='Herbal-Food-Corner', BRANCH='main'; let token='', menu={items:[]};
-const $=id=>document.getElementById(id); const api=(path)=>`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
-function b64utf8(str){return btoa(unescape(encodeURIComponent(str)))} function fromB64(str){const bin=atob(str.replace(/\n/g,''));const bytes=Uint8Array.from(bin,c=>c.charCodeAt(0));return new TextDecoder().decode(bytes)}
-async function gh(path,opts={}){const r=await fetch(api(path),{...opts,headers:{'Accept':'application/vnd.github+json','Authorization':'Bearer '+token,'X-GitHub-Api-Version':'2022-11-28',...(opts.headers||{})}});const data=await r.json().catch(()=>({}));if(!r.ok)throw new Error(data.message||('GitHub error '+r.status));return data}
-async function load(){const f=await gh('menu.json');menu=JSON.parse(fromB64(f.content));$('manager').classList.remove('hidden');render();$('connectStatus').textContent='Connected. Menu loaded.'}
-async function writeFile(path,content,message){let sha;try{sha=(await gh(path)).sha}catch(e){if(!String(e.message).includes('Not Found'))throw e}return gh(path,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message,content,branch:BRANCH,...(sha?{sha}:{})})})}
-async function uploadPhoto(file){if(file.size>2*1024*1024)throw new Error('Photo එක 2 MB ට අඩු කරන්න.');const ext=(file.name.split('.').pop()||'jpg').toLowerCase();const safeExt=['jpg','jpeg','png','webp'].includes(ext)?ext:'jpg';const id=$('editId').value||slug($('name_en').value);const path=`images/menu-${id}.${safeExt}`;const b64=await new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(String(r.result).split(',')[1]);r.onerror=reject;r.readAsDataURL(file)});await writeFile(path,b64,'Upload menu photo: '+id);return path}
+'use strict';
+const OWNER='herbalfoodcorner', REPO='Herbal-Food-Corner', BRANCH='main';
+let token='', menu={items:[]}, menuSha='';
+const $=id=>document.getElementById(id);
+const api=path=>'https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/'+path;
+function b64utf8(s){const bytes=new TextEncoder().encode(s);let binary='';bytes.forEach(b=>binary+=String.fromCharCode(b));return btoa(binary)}
+function fromB64(s){const clean=s.replace(/\s/g,'');const binary=atob(clean);const bytes=Uint8Array.from(binary,c=>c.charCodeAt(0));return new TextDecoder().decode(bytes)}
+async function gh(path,options={}){
+  const headers=new Headers(options.headers||{});
+  headers.set('Accept','application/vnd.github+json');
+  headers.set('Authorization','Bearer '+token);
+  headers.set('X-GitHub-Api-Version','2022-11-28');
+  if(options.body) headers.set('Content-Type','application/json');
+  const response=await fetch(api(path)+'?ref='+encodeURIComponent(BRANCH),{...options,headers});
+  const raw=await response.text();
+  let data;
+  try{data=JSON.parse(raw)}catch(e){throw new Error('GitHub API returned non-JSON (HTTP '+response.status+'): '+raw.slice(0,220))}
+  if(!response.ok) throw new Error((data.message||'GitHub API error')+' (HTTP '+response.status+')');
+  return data;
+}
+async function load(){
+  const file=await gh('menu.json');
+  if(!file.content) throw new Error('menu.json is empty or GitHub did not return its content.');
+  const parsed=JSON.parse(fromB64(file.content));
+  if(!parsed||!Array.isArray(parsed.items)) throw new Error('menu.json format must be {"items": []}.');
+  menu=parsed;menuSha=file.sha||'';
+  $('manager').classList.remove('hidden');render();$('connectStatus').textContent='Connected. Menu loaded successfully.';
+}
+async function getSha(path){try{return (await gh(path)).sha||''}catch(e){if(e.message.includes('HTTP 404'))return '';throw e}}
+async function putFile(path,content,message){
+  const sha=await getSha(path);
+  const body={message,content,branch:BRANCH};if(sha)body.sha=sha;
+  return gh(path,{method:'PUT',body:JSON.stringify(body)});
+}
 function slug(s){return (s||'menu-item').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,45)||'menu-item'}
-function render(){const host=$('items');host.innerHTML='';menu.items.forEach((it,i)=>{const row=document.createElement('div');row.className='item';const img=document.createElement('img');img.src=it.image||'';img.onerror=()=>img.style.visibility='hidden';const info=document.createElement('div');info.className='info';const b=document.createElement('b');b.textContent=it.name_en||'Unnamed';const small=document.createElement('small');small.textContent=(it.category||'')+' · '+(it.price||'No price')+(it.active===false?' · Hidden':'');info.append(b,small);const edit=document.createElement('button');edit.className='secondary';edit.textContent='Edit';edit.onclick=()=>fill(i);const del=document.createElement('button');del.className='danger';del.textContent='Delete';del.onclick=()=>remove(i);row.append(img,info,edit,del);host.append(row)})}
-function fill(i){const x=menu.items[i];$('editId').value=x.id;$('category').value=x.category||'Kanda';$('price').value=x.price||'';['en','si','ta'].forEach(l=>$('name_'+l).value=x['name_'+l]||'');$('description_en').value=x.description_en||'';$('featured').checked=!!x.featured;$('active').checked=x.active!==false;$('photo').value='';$('photoStatus').textContent='Current photo: '+(x.image||'none');$('formTitle').textContent='Edit menu item';window.scrollTo({top:0,behavior:'smooth'})}
+function render(){const host=$('items');host.replaceChildren();menu.items.forEach((it,i)=>{const row=document.createElement('div');row.className='item';const img=document.createElement('img');img.src=it.image||'';img.onerror=()=>img.style.visibility='hidden';const info=document.createElement('div');info.className='info';const b=document.createElement('b');b.textContent=it.name_en||'Unnamed';const small=document.createElement('small');small.textContent=(it.category||'')+' · '+(it.price||'No price')+(it.active===false?' · Hidden':'');info.append(b,small);const edit=document.createElement('button');edit.className='secondary';edit.textContent='Edit';edit.onclick=()=>fill(i);const del=document.createElement('button');del.className='danger';del.textContent='Delete';del.onclick=()=>removeItem(i);row.append(img,info,edit,del);host.append(row)});if(!menu.items.length)host.textContent='No menu items yet.'}
+function fill(i){const x=menu.items[i];$('editId').value=x.id||'';$('category').value=x.category||'Kanda';$('price').value=x.price||'';['en','si','ta'].forEach(l=>$('name_'+l).value=x['name_'+l]||'');$('description_en').value=x.description_en||'';$('featured').checked=!!x.featured;$('active').checked=x.active!==false;$('photo').value='';$('photoStatus').textContent='Current photo: '+(x.image||'none');$('formTitle').textContent='Edit menu item';window.scrollTo({top:0,behavior:'smooth'})}
 function clearForm(){['editId','price','name_en','name_si','name_ta','description_en'].forEach(id=>$(id).value='');$('photo').value='';$('featured').checked=false;$('active').checked=true;$('formTitle').textContent='Add a new menu item';$('photoStatus').textContent='No new photo selected.'}
-async function persist(){await writeFile('menu.json',b64utf8(JSON.stringify(menu,null,2)),'Update Herbal Food Corner menu');render()}
-async function remove(i){if(!confirm('Delete this menu item from the website?'))return;menu.items.splice(i,1);try{await persist();alert('Item deleted.')}catch(e){alert(e.message);await load()}}
-$('connect').onclick=async()=>{token=$('token').value.trim();if(!token){$('connectStatus').textContent='Token එක ඇතුළත් කරන්න.';return}$('connectStatus').textContent='Connecting...';try{await load()}catch(e){token='';$('connectStatus').textContent='Connect failed: '+e.message+' — Token permission සහ repository name පරීක්ෂා කරන්න.'}};
-$('reload').onclick=async()=>{try{await load()}catch(e){alert(e.message)}};$('clear').onclick=clearForm;
+async function saveMenu(){const result=await putFile('menu.json',b64utf8(JSON.stringify(menu,null,2)),'Update Herbal Food Corner menu');menuSha=result.content?.sha||menuSha;render()}
+async function uploadPhoto(file,id){if(file.size>2*1024*1024)throw new Error('Photo එක 2 MB ට අඩු කරන්න.');const ext=(file.name.split('.').pop()||'jpg').toLowerCase();const safeExt=['jpg','jpeg','png','webp'].includes(ext)?ext:'jpg';const path='images/menu-'+id+'.'+safeExt;const base64=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(',')[1]);reader.onerror=()=>reject(new Error('Could not read photo.'));reader.readAsDataURL(file)});await putFile(path,base64,'Upload menu photo: '+id);return path}
+async function removeItem(i){if(!confirm('Delete this menu item from the website?'))return;const old=menu.items[i];menu.items.splice(i,1);try{await saveMenu();alert('Item deleted.')}catch(e){menu.items.splice(i,0,old);render();alert(e.message)}}
+$('connect').onclick=async()=>{token=$('token').value.trim();if(!token){$('connectStatus').textContent='Please enter your GitHub token.';return}if(!/^[A-Za-z0-9_]+$/.test(token)){$('connectStatus').textContent='Token has invalid characters. Copy the GitHub token again.';return}$('connect').disabled=true;$('connectStatus').textContent='Connecting...';try{await load()}catch(e){token='';$('connectStatus').textContent='Connect failed: '+e.message}finally{$('connect').disabled=false}};
+$('reload').onclick=async()=>{try{await load()}catch(e){alert(e.message)}};
+$('clear').onclick=clearForm;
 $('photo').onchange=()=>{$('photoStatus').textContent=$('photo').files[0]?'Selected: '+$('photo').files[0].name:'No new photo selected.'};
-$('save').onclick=async()=>{if(!token)return alert('Connect first.');const name=$('name_en').value.trim();if(!name)return alert('English name is required.');$('save').disabled=true;$('saveStatus').classList.remove('hidden');$('saveStatus').textContent='Saving...';try{let id=$('editId').value||slug(name);let old=menu.items.find(x=>x.id===id);let image=old?.image||'';const file=$('photo').files[0];if(file){$('saveStatus').textContent='Uploading photo...';image=await uploadPhoto(file)}const item={id,category:$('category').value,name_en:name,name_si:$('name_si').value.trim(),name_ta:$('name_ta').value.trim(),description_en:$('description_en').value.trim(),price:$('price').value.trim()||'Ask for price',image,active:$('active').checked,featured:$('featured').checked};const idx=menu.items.findIndex(x=>x.id===id);if(idx>=0)menu.items[idx]=item;else menu.items.push(item);$('saveStatus').textContent='Saving menu...';await persist();$('saveStatus').textContent='Saved! Website will update after GitHub Pages deploys.';clearForm()}catch(e){$('saveStatus').textContent='Error: '+e.message}finally{$('save').disabled=false}};
-</script></body></html>
+$('save').onclick=async()=>{if(!token)return alert('Connect first.');const name=$('name_en').value.trim();if(!name)return alert('English name is required.');$('save').disabled=true;$('saveStatus').classList.remove('hidden');$('saveStatus').textContent='Saving...';const before=JSON.stringify(menu);try{const id=$('editId').value||slug(name);const old=menu.items.find(x=>x.id===id);let image=old?.image||'';const file=$('photo').files[0];if(file){$('saveStatus').textContent='Uploading photo...';image=await uploadPhoto(file,id)}const item={id,category:$('category').value,name_en:name,name_si:$('name_si').value.trim(),name_ta:$('name_ta').value.trim(),description_en:$('description_en').value.trim(),price:$('price').value.trim()||'Ask for price',image,active:$('active').checked,featured:$('featured').checked};const index=menu.items.findIndex(x=>x.id===id);if(index>=0)menu.items[index]=item;else menu.items.push(item);$('saveStatus').textContent='Saving menu...';await saveMenu();$('saveStatus').textContent='Saved! Website will update after GitHub Pages deploys.';clearForm()}catch(e){menu=JSON.parse(before);render();$('saveStatus').textContent='Error: '+e.message}finally{$('save').disabled=false}};
+</script>
+</body>
+</html>
