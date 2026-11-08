@@ -35,6 +35,18 @@
       "image": "images/menu-garlic-porridge.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "sago-jaggery-drink",
+      "category": "Drink",
+      "name_en": "Sago Jaggery Drink",
+      "name_si": "පැණි සව්",
+      "name_ta": "",
+      "description_en": "",
+      "price": "150",
+      "image": "images/menu-sago-jaggery-drink.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
