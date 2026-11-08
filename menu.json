@@ -95,6 +95,18 @@
       "image": "images/menu-manioc.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "pasta",
+      "category": "Food",
+      "name_en": "Pasta",
+      "name_si": "පැස්ටා",
+      "name_ta": "",
+      "description_en": "",
+      "price": "240",
+      "image": "images/menu-pasta.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
