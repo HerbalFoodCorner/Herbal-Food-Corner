@@ -13,18 +13,6 @@
       "featured": false
     },
     {
-      "id": "ragi-porridge",
-      "category": "Kanda",
-      "name_en": "Ragi Porridge",
-      "name_si": "කුරක්කන් කැඳ",
-      "name_ta": "கேழ்வரகு கஞ்சி",
-      "description_en": "",
-      "price": "140",
-      "image": "images/menu-ragi-porridge.jpg",
-      "active": true,
-      "featured": false
-    },
-    {
       "id": "garlic-porridge",
       "category": "Kanda",
       "name_en": "Garlic Porridge",
@@ -129,6 +117,18 @@
       "description_en": "",
       "price": "220",
       "image": "images/menu-noodles.jpg",
+      "active": true,
+      "featured": false
+    },
+    {
+      "id": "herbal-leaf-porridge-1794931347618",
+      "category": "Kanda",
+      "name_en": "Herbal Leaf Porridge",
+      "name_si": "කොළ කැඳ",
+      "name_ta": "மூலிகைக் கஞ்சி",
+      "description_en": "",
+      "price": "120",
+      "image": "images/menu/1000082952-1794931343969.jpg",
       "active": true,
       "featured": false
     }
