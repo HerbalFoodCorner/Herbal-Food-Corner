@@ -1,0 +1,158 @@
+
+{
+  "items": [
+    {
+      "id": "gallery-1794131973165",
+      "category": "plants",
+      "title": {
+        "en": "Gotukola Leaves",
+        "si": "ගොටුකොළ",
+        "ta": "வல்லாரை"
+      },
+      "date": "",
+      "note": {
+        "en": "Fresh Gotukola leaves.",
+        "si": "නැවුම් ගොටුකොළ කොළ.",
+        "ta": "புதிய வல்லாரை இலைகள்."
+      },
+      "image": "images/gallery-gallery-1794131973165.jpg",
+      "active": true
+    },
+    {
+      "id": "gallery-1794133246507",
+      "category": "moments",
+      "title": {
+        "en": "Special Moments",
+        "si": "විශේෂ අවස්ථා",
+        "ta": "சிறப்பு தருணங்கள்"
+      },
+      "date": "",
+      "note": {
+        "en": "",
+        "si": "",
+        "ta": ""
+      },
+      "image": "images/gallery-gallery-1794133246507.jpg",
+      "active": true
+    },
+    {
+      "id": "gallery-1794152209795",
+      "category": "plants",
+      "title": {
+        "en": "Hathawariya",
+        "si": "හාතාවාරිය",
+        "ta": "தண்ணீர்விட்டான் கிழங்கு"
+      },
+      "date": "",
+      "note": {
+        "en": "Hathawariya herbal plant.",
+        "si": "හාතාවාරිය ඖෂධීය ශාකය.",
+        "ta": "தண்ணீர்விட்டான் கிழங்கு மூலிகைச் செடி."
+      },
+      "image": "images/gallery-gallery-1794152209795.jpg",
+      "active": true
+    },
+    {
+      "id": "gallery-1794152323140",
+      "category": "plants",
+      "title": {
+        "en": "Curry Leaves",
+        "si": "කරපිංචා",
+        "ta": "கறிவேப்பிலை"
+      },
+      "date": "",
+      "note": {
+        "en": "Fresh curry leaves.",
+        "si": "නැවුම් කරපිංචා කොළ.",
+        "ta": "புதிய கறிவேப்பிலை."
+      },
+      "image": "images/gallery-gallery-1794152323140.jpg",
+      "active": true
+    },
+    {
+      "id": "gallery-1794152549123",
+      "category": "plants",
+      "title": {
+        "en": "Neeramulliya",
+        "si": "නීරමුල්ලිය",
+        "ta": "நீர்முள்ளி"
+      },
+      "date": "",
+      "note": {
+        "en": "Neeramulliya herbal plant.",
+        "si": "නීරමුල්ලිය ඖෂධීය ශාකය.",
+        "ta": "நீர்முள்ளி மூலிகைச் செடி."
+      },
+      "image": "images/gallery-gallery-1794152549123.jpg",
+      "active": true
+    },
+    {
+      "id": "gallery-1794152583596",
+      "category": "plants",
+      "title": {
+        "en": "Heenbovitiya",
+        "si": "හීන්බෝවිටියා",
+        "ta": "சிறிய போவிட்டியா"
+      },
+      "date": "",
+      "note": {
+        "en": "Heenbovitiya herbal plant.",
+        "si": "හීන්බෝවිටියා ඖෂධීය ශාකය.",
+        "ta": "ஹீன்போவிட்டியா மூலிகைச் செடி."
+      },
+      "image": "images/gallery-gallery-1794152583596.jpg",
+      "active": true
+    },
+    {
+      "id": "gallery-1794152612966",
+      "category": "plants",
+      "title": {
+        "en": "Monarakudumbiya",
+        "si": "මොණරකුඩුම්බිය",
+        "ta": "மோனரகுடும்பியா"
+      },
+      "date": "",
+      "note": {
+        "en": "Monarakudumbiya herbal plant.",
+        "si": "මොණරකුඩුම්බිය ඖෂධීය ශාකය.",
+        "ta": "மோனரகுடும்பியா மூலிகைச் செடி."
+      },
+      "image": "images/gallery-gallery-1794152612966.jpg",
+      "active": true
+    },
+    {
+      "id": "gallery-1794152639404",
+      "category": "plants",
+      "title": {
+        "en": "Polpala",
+        "si": "පොල්පලා",
+        "ta": "பொற்பலை"
+      },
+      "date": "",
+      "note": {
+        "en": "Polpala herbal plant.",
+        "si": "පොල්පලා ඖෂධීය ශාකය.",
+        "ta": "பொற்பலை மூலிகைச் செடி."
+      },
+      "image": "images/gallery-gallery-1794152639404.jpg",
+      "active": true
+    },
+    {
+      "id": "gallery-1794152788098",
+      "category": "plants",
+      "title": {
+        "en": "Welpenela",
+        "si": "වැල්පෙනෙල",
+        "ta": "வெல்பெனெல"
+      },
+      "date": "",
+      "note": {
+        "en": "Welpenela herbal plant.",
+        "si": "වැල්පෙනෙල ඖෂධීය ශාකය.",
+        "ta": "வெல்பெனெல மூலிகைச் செடி."
+      },
+      "image": "images/gallery-gallery-1794152788098.jpg",
+      "active": true
+    }
+  ]
+}
