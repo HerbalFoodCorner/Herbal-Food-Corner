@@ -13,18 +13,6 @@
       "featured": false
     },
     {
-      "id": "garlic-porridge",
-      "category": "Kanda",
-      "name_en": "Garlic Porridge",
-      "name_si": "සුදුලූණු කැඳ",
-      "name_ta": "பூண்டு கஞ்சி",
-      "description_en": "",
-      "price": "140",
-      "image": "images/menu-garlic-porridge.jpg",
-      "active": true,
-      "featured": false
-    },
-    {
       "id": "sago-jaggery-drink",
       "category": "Drink",
       "name_en": "Sago Jaggery Drink",
