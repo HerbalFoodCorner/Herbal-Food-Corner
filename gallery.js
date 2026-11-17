@@ -2,29 +2,29 @@
 (function(){
 'use strict';
 
-const host = document.getElementById('live-gallery-grid');
-if(!host) return;
+const galleryHost = document.getElementById('live-gallery-grid');
+const momentsHost = document.getElementById('live-special-moments-grid');
 
-const lang = (document.documentElement.lang || 'en').toLowerCase().split('-')[0];
+if(!galleryHost && !momentsHost) return;
+
+const lang = (document.documentElement.lang || 'en')
+ .toLowerCase().split('-')[0];
 
 const translations = {
  en: {
-  plants: 'Herbal Plants',
-  moments: 'Special Moments',
-  empty: 'Gallery photos will be added soon.',
-  error: 'Gallery photos will appear here soon.'
+  galleryEmpty: 'Herbal plant photos will be added soon.',
+  momentsEmpty: 'Special Moments photos will be added soon.',
+  error: 'Photos will appear here soon.'
  },
  si: {
-  plants: 'ඖෂධීය පැළෑටි',
-  moments: 'විශේෂ අවස්ථා',
-  empty: 'ගැලරියේ ඡායාරූප ඉක්මනින් එකතු කරනු ලැබේ.',
-  error: 'ගැලරියේ ඡායාරූප ඉක්මනින් මෙහි පෙන්වනු ලැබේ.'
+  galleryEmpty: 'ඖෂධීය පැළෑටිවල ඡායාරූප ඉක්මනින් එකතු කරනු ලැබේ.',
+  momentsEmpty: 'විශේෂ අවස්ථාවල ඡායාරූප ඉක්මනින් එකතු කරනු ලැබේ.',
+  error: 'ඡායාරූප ඉක්මනින් මෙහි පෙන්වනු ලැබේ.'
  },
  ta: {
-  plants: 'மூலிகைத் தாவரங்கள்',
-  moments: 'சிறப்பு தருணங்கள்',
-  empty: 'காட்சியகப் படங்கள் விரைவில் சேர்க்கப்படும்.',
-  error: 'காட்சியகப் படங்கள் விரைவில் இங்கே காண்பிக்கப்படும்.'
+  galleryEmpty: 'மூலிகைத் தாவரங்களின் படங்கள் விரைவில் சேர்க்கப்படும்.',
+  momentsEmpty: 'சிறப்புத் தருணங்களின் படங்கள் விரைவில் சேர்க்கப்படும்.',
+  error: 'படங்கள் விரைவில் இங்கே காண்பிக்கப்படும்.'
  }
 };
 
@@ -37,97 +37,88 @@ function localized(value){
  return value || '';
 }
 
-const url = 'gallery.json?v=' + Date.now();
+function renderItems(host, items, emptyText){
+ if(!host) return;
 
-fetch(url)
+ host.innerHTML = '';
+
+ if(!items.length){
+  host.textContent = emptyText;
+  return;
+ }
+
+ const grid = document.createElement('div');
+ grid.className = 'gallery-grid';
+
+ items.forEach(item => {
+  const figure = document.createElement('figure');
+  figure.className = 'gallery-card';
+
+  const frame = document.createElement('div');
+  frame.className = 'gallery-frame';
+
+  const img = document.createElement('img');
+  const title = localized(item.title);
+
+  img.src = item.image || '';
+  img.alt = title || 'Herbal Food Corner';
+  img.loading = 'lazy';
+  img.onerror = () => {
+   img.style.display = 'none';
+  };
+
+  frame.appendChild(img);
+  figure.appendChild(frame);
+
+  const caption = document.createElement('figcaption');
+
+  if(title){
+   const strong = document.createElement('strong');
+   strong.textContent = title;
+   caption.appendChild(strong);
+  }
+
+  if(item.date){
+   const date = document.createElement('time');
+   date.dateTime = item.date;
+   date.textContent = item.date;
+   caption.appendChild(date);
+  }
+
+  const note = localized(item.note);
+
+  if(note){
+   const paragraph = document.createElement('p');
+   paragraph.textContent = note;
+   caption.appendChild(paragraph);
+  }
+
+  figure.appendChild(caption);
+  grid.appendChild(figure);
+ });
+
+ host.appendChild(grid);
+}
+
+fetch('gallery.json?v=' + Date.now())
 .then(response => {
  if(!response.ok) throw Error('Gallery data unavailable');
  return response.json();
 })
 .then(data => {
  const items = Array.isArray(data.items)
-  ? data.items.filter(x => x.active !== false)
+  ? data.items.filter(item => item.active !== false)
   : [];
 
- host.innerHTML = '';
+ const plants = items.filter(item => item.category === 'plants');
+ const moments = items.filter(item => item.category === 'moments');
 
- if(!items.length){
-  host.textContent = t.empty;
-  return;
- }
-
- const categories = [
-  ['plants', t.plants],
-  ['moments', t.moments]
- ];
-
- categories.forEach(([key,label]) => {
-  const list = items.filter(x => x.category === key);
-  if(!list.length) return;
-
-  const section = document.createElement('section');
-  section.className = 'gallery-category';
-
-  const heading = document.createElement('h3');
-  heading.textContent = label;
-  section.appendChild(heading);
-
-  const grid = document.createElement('div');
-  grid.className = 'gallery-grid';
-
-  list.forEach(x => {
-   const fig = document.createElement('figure');
-   fig.className = 'gallery-card';
-
-   const frame = document.createElement('div');
-   frame.className = 'gallery-frame';
-
-   const img = document.createElement('img');
-   const title = localized(x.title);
-
-   img.src = x.image || '';
-   img.alt = title || label;
-   img.loading = 'lazy';
-   img.onerror = () => {
-    img.style.display = 'none';
-   };
-
-   frame.appendChild(img);
-   fig.appendChild(frame);
-
-   const cap = document.createElement('figcaption');
-
-   if(title){
-    const strong = document.createElement('strong');
-    strong.textContent = title;
-    cap.appendChild(strong);
-   }
-
-   if(x.date){
-    const date = document.createElement('time');
-    date.dateTime = x.date;
-    date.textContent = x.date;
-    cap.appendChild(date);
-   }
-
-   const note = localized(x.note);
-
-   if(note){
-    const paragraph = document.createElement('p');
-    paragraph.textContent = note;
-    cap.appendChild(paragraph);
-   }
-
-   fig.appendChild(cap);
-   grid.appendChild(fig);
-  });
-
-  section.appendChild(grid);
-  host.appendChild(section);
- });
+ renderItems(galleryHost, plants, t.galleryEmpty);
+ renderItems(momentsHost, moments, t.momentsEmpty);
 })
 .catch(() => {
- host.textContent = t.error;
+ if(galleryHost) galleryHost.textContent = t.error;
+ if(momentsHost) momentsHost.textContent = t.error;
 });
 
 })();
