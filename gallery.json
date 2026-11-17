@@ -15,7 +15,7 @@
         "si": "නැවුම් ගොටුකොළ කොළ.",
         "ta": "புதிய வல்லாரை இலைகள்."
       },
-      "image": "images/gallery-gallery-1794131973165.jpg",
+      "image": "images/gallery/gallery-gallery-1794131973165.jpg",
       "active": true
     },
     {
@@ -32,7 +32,7 @@
         "si": "",
         "ta": ""
       },
-      "image": "images/gallery-gallery-1794133246507.jpg",
+      "image": "images/special-moments/gallery-gallery-1794133246507.jpg",
       "active": true
     },
     {
@@ -49,7 +49,7 @@
         "si": "හාතාවාරිය ඖෂධීය ශාකය.",
         "ta": "தண்ணீர்விட்டான் கிழங்கு மூலிகைச் செடி."
       },
-      "image": "images/gallery-gallery-1794152209795.jpg",
+      "image": "images/gallery/gallery-gallery-1794152209795.jpg",
       "active": true
     },
     {
@@ -66,7 +66,7 @@
         "si": "නැවුම් කරපිංචා කොළ.",
         "ta": "புதிய கறிவேப்பிலை."
       },
-      "image": "images/gallery-gallery-1794152323140.jpg",
+      "image": "images/gallery/gallery-gallery-1794152323140.jpg",
       "active": true
     },
     {
@@ -83,7 +83,7 @@
         "si": "නීරමුල්ලිය ඖෂධීය ශාකය.",
         "ta": "நீர்முள்ளி மூலிகைச் செடி."
       },
-      "image": "images/gallery-gallery-1794152549123.jpg",
+      "image": "images/gallery/gallery-gallery-1794152549123.jpg",
       "active": true
     },
     {
@@ -100,7 +100,7 @@
         "si": "හීන්බෝවිටියා ඖෂධීය ශාකය.",
         "ta": "ஹீன்போவிட்டியா மூலிகைச் செடி."
       },
-      "image": "images/gallery-gallery-1794152583596.jpg",
+      "image": "images/gallery/gallery-gallery-1794152583596.jpg",
       "active": true
     },
     {
@@ -117,7 +117,7 @@
         "si": "මොණරකුඩුම්බිය ඖෂධීය ශාකය.",
         "ta": "மோனரகுடும்பியா மூலிகைச் செடி."
       },
-      "image": "images/gallery-gallery-1794152612966.jpg",
+      "image": "images/gallery/gallery-gallery-1794152612966.jpg",
       "active": true
     },
     {
@@ -134,7 +134,7 @@
         "si": "පොල්පලා ඖෂධීය ශාකය.",
         "ta": "பொற்பலை மூலிகைச் செடி."
       },
-      "image": "images/gallery-gallery-1794152639404.jpg",
+      "image": "images/gallery/gallery-gallery-1794152639404.jpg",
       "active": true
     },
     {
@@ -151,7 +151,7 @@
         "si": "වැල්පෙනෙල ඖෂධීය ශාකය.",
         "ta": "வெல்பெனெல மூலிகைச் செடி."
       },
-      "image": "images/gallery-gallery-1794152788098.jpg",
+      "image": "images/gallery/gallery-gallery-1794152788098.jpg",
       "active": true
     }
   ]
