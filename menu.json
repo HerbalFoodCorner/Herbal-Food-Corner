@@ -83,6 +83,18 @@
       "image": "images/menu/1000076938-1795078856825.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "manioc-1795079678038",
+      "category": "Kanda",
+      "name_en": "Manioc",
+      "name_si": "මඤ්ඤොක්කා",
+      "name_ta": "",
+      "description_en": "",
+      "price": "140",
+      "image": "images/menu/1000082953-1795079675521.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
