@@ -61,26 +61,26 @@
       "featured": true
     },
     {
-      "id": "chick-peas-1795078462482",
+      "id": "chick-peas-1795078535128",
       "category": "Food",
       "name_en": "Chick Peas",
       "name_si": "කඩල",
       "name_ta": "",
       "description_en": "",
       "price": "150",
-      "image": "images/menu/1000082889-1795078459354.jpg",
+      "image": "images/menu/1000082889-1795078531676.jpg",
       "active": true,
       "featured": false
     },
     {
-      "id": "chick-peas-1795078480408",
+      "id": "chick-peas-1795078561018",
       "category": "Food",
       "name_en": "Chick Peas",
       "name_si": "කඩල",
       "name_ta": "",
       "description_en": "",
       "price": "150",
-      "image": "images/menu/1000082889-1795078477633.jpg",
+      "image": "images/menu/1000082950-1795078557825.jpg",
       "active": true,
       "featured": false
     }
