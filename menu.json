@@ -47,6 +47,18 @@
       "image": "images/menu/1000082893-1795078217821.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "milk-rice-1795078407460",
+      "category": "Food",
+      "name_en": "Milk Rice",
+      "name_si": "කිරිබත්",
+      "name_ta": "",
+      "description_en": "One Milk rice slice & Lunu miris",
+      "price": "120",
+      "image": "images/menu/1000082895-1795078404980.jpg",
+      "active": true,
+      "featured": true
     }
   ]
 }
