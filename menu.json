@@ -35,6 +35,18 @@
       "image": "images/menu/1000082951-1795015632928.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "kithul-flour-porridge-1795078220404",
+      "category": "Kanda",
+      "name_en": "Kithul Flour Porridge",
+      "name_si": "කිතුල් පිටි කැඳ",
+      "name_ta": "",
+      "description_en": "",
+      "price": "150",
+      "image": "images/menu/1000082893-1795078217821.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
