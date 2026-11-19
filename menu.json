@@ -107,6 +107,18 @@
       "image": "images/menu/1000082959-1795080091688.webp",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "macaroni-1795080139367",
+      "category": "Food",
+      "name_en": "Macaroni",
+      "name_si": "මැකරොනි",
+      "name_ta": "",
+      "description_en": "",
+      "price": "240",
+      "image": "images/menu/1000082957-1795080136281.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
