@@ -61,26 +61,38 @@
       "featured": true
     },
     {
-      "id": "chick-peas-1795078535128",
+      "id": "chick-peas-1795078462482",
       "category": "Food",
       "name_en": "Chick Peas",
       "name_si": "කඩල",
       "name_ta": "",
       "description_en": "",
       "price": "150",
-      "image": "images/menu/1000082889-1795078531676.jpg",
+      "image": "images/menu/1000082889-1795078459354.jpg",
       "active": true,
       "featured": false
     },
     {
-      "id": "chick-peas-1795078561018",
+      "id": "chick-peas-1795078480408",
       "category": "Food",
       "name_en": "Chick Peas",
       "name_si": "කඩල",
       "name_ta": "",
       "description_en": "",
       "price": "150",
-      "image": "images/menu/1000082950-1795078557825.jpg",
+      "image": "images/menu/1000082889-1795078477633.jpg",
+      "active": true,
+      "featured": false
+    },
+    {
+      "id": "kawpi-1795078860052",
+      "category": "Kanda",
+      "name_en": "Kawpi",
+      "name_si": "කව්පි",
+      "name_ta": "",
+      "description_en": "",
+      "price": "200",
+      "image": "images/menu/1000076938-1795078856825.jpg",
       "active": true,
       "featured": false
     }
