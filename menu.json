@@ -83,6 +83,18 @@
       "image": "images/menu/1000059302-1795177095749.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "sago-jaggery-drink-1795177491229",
+      "category": "Kanda",
+      "name_en": "Sago Jaggery Drink",
+      "name_si": "පැණිසව්",
+      "name_ta": "சவ் ைஞ்சி",
+      "description_en": "",
+      "price": "150",
+      "image": "images/menu/1000083786-1795177488588.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
