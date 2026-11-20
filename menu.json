@@ -71,6 +71,18 @@
       "image": "images/menu/1000076938-1795078856825.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "herbal-leaf-porridge-1795177098812",
+      "category": "Kanda",
+      "name_en": "Herbal Leaf Porridge",
+      "name_si": "කොළ කැඳ",
+      "name_ta": "மூலிகை இகைக் ைஞ்சி (கைோை ைஞ்சி)",
+      "description_en": "",
+      "price": "120",
+      "image": "images/menu/1000059302-1795177095749.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
