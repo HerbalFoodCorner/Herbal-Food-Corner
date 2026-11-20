@@ -131,6 +131,18 @@
       "image": "images/menu/1000083787-1795178095343.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "eggs-boiled--1795178317883",
+      "category": "Food",
+      "name_en": "Eggs (Boiled)",
+      "name_si": "බිත්තර (තම්බපු)",
+      "name_ta": "அவித்த முட்டை",
+      "description_en": "",
+      "price": "70",
+      "image": "images/menu/1000083788-1795178315213.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
