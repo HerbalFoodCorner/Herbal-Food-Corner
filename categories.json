@@ -13,13 +13,6 @@
       "name_si": "සාම්ප්‍රදායික ආහාර",
       "name_ta": "பாரம்பரிய உணவுகள்",
       "active": true
-    },
-    {
-      "id": "Drink",
-      "name_en": "Herbal Drinks",
-      "name_si": "ඖෂධීය පානයන්",
-      "name_ta": "மூலிகை பானங்கள்",
-      "active": true
     }
   ]
 }
