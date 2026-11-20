@@ -95,6 +95,18 @@
       "image": "images/menu/1000083786-1795177488588.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "rice-curry-1795177634562",
+      "category": "Food",
+      "name_en": "Rice & Curry",
+      "name_si": "බත් සහ ව්‍යංජන",
+      "name_ta": "கசோறு",
+      "description_en": "",
+      "price": "240",
+      "image": "images/menu/1000071636-1795177631561.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
