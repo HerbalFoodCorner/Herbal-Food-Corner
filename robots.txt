@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://asankanammuni.github.io/Herbal-Food/sitemap.xml
+Sitemap: https://herbalfoodcorner.github.io/Herbal-Food-Corner/sitemap.xml

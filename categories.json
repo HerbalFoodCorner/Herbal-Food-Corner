@@ -1,0 +1,25 @@
+{
+  "categories": [
+    {
+      "id": "Kanda",
+      "name_en": "Kola Kanda & Porridge",
+      "name_si": "කොළකැඳ සහ කැඳ වර්ග",
+      "name_ta": "மூலிகைக் கஞ்சி வகைகள்",
+      "active": true
+    },
+    {
+      "id": "Food",
+      "name_en": "Traditional Foods",
+      "name_si": "සාම්ප්‍රදායික ආහාර",
+      "name_ta": "பாரம்பரிய உணவுகள்",
+      "active": true
+    },
+    {
+      "id": "Drink",
+      "name_en": "Herbal Drinks",
+      "name_si": "ඖෂධීය පානයන්",
+      "name_ta": "மூலிகை பானங்கள்",
+      "active": true
+    }
+  ]
+}

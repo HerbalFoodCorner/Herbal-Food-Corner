@@ -119,3 +119,12 @@
   }
 }
 
+
+
+/* Dynamic menu categories */
+#live-menu-grid{display:block}
+.menu-category-section{margin:0 0 38px}
+.menu-category-title{margin:0 0 18px;padding:13px 18px;background:#eff5df;border-left:4px solid #d6b875;border-radius:10px;color:#174b32;font-size:22px;font-weight:800}
+.menu-category-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+@media(max-width:850px){.menu-category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.menu-category-title{font-size:19px;padding:11px 14px}.menu-category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
