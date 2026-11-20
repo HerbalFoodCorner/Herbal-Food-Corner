@@ -143,6 +143,18 @@
       "image": "images/menu/1000083788-1795178315213.jpg",
       "active": true,
       "featured": false
+    },
+    {
+      "id": "vegetable-soup-1795179048026",
+      "category": "Kanda",
+      "name_en": "Vegetable Soup",
+      "name_si": "එලවළු සුප්",
+      "name_ta": "ைோய்ைறி சூப்",
+      "description_en": "",
+      "price": "200",
+      "image": "images/menu/1000083790-1795179044340.jpg",
+      "active": true,
+      "featured": false
     }
   ]
 }
