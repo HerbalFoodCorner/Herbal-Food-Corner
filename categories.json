@@ -9,8 +9,8 @@
     },
     {
       "id": "Food",
-      "name_en": "Traditional Foods",
-      "name_si": "සාම්ප්‍රදායික ආහාර",
+      "name_en": "Foods",
+      "name_si": "ආහාර",
       "name_ta": "பாரம்பரிய உணவுகள்",
       "active": true
     }
