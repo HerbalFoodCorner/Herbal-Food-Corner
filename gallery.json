@@ -16,6 +16,23 @@
       },
       "image": "images/special-moments/1000082878-1795015737349.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1795164103410",
+      "category": "plants",
+      "title": {
+        "en": "Wal penela",
+        "si": "වැල් පෙනෙල",
+        "ta": ""
+      },
+      "date": "",
+      "note": {
+        "en": "",
+        "si": "",
+        "ta": ""
+      },
+      "image": "images/gallery/1000083730-1795164100742.jpg",
+      "active": true
     }
   ]
 }
