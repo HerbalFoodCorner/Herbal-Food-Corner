@@ -169,6 +169,23 @@
       },
       "image": "images/gallery/1000084507-1795435217460.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1795435369395",
+      "category": "plants",
+      "title": {
+        "en": "Polpala / Mountain Knotgrass",
+        "si": "පොල්පලා",
+        "ta": "சிறுபீளை"
+      },
+      "date": "",
+      "note": {
+        "en": "",
+        "si": "",
+        "ta": ""
+      },
+      "image": "images/gallery/1000084508-1795435366612.jpg",
+      "active": true
     }
   ]
 }
