@@ -84,6 +84,23 @@
       },
       "image": "images/gallery/1000084491-1795432621103.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1795432689592",
+      "category": "plants",
+      "title": {
+        "en": "Heenbovitiya",
+        "si": "හීන්බෝවිටියා",
+        "ta": ""
+      },
+      "date": "",
+      "note": {
+        "en": "",
+        "si": "",
+        "ta": ""
+      },
+      "image": "images/gallery/1000084492-1795432684552.jpg",
+      "active": true
     }
   ]
 }
