@@ -118,6 +118,23 @@
       },
       "image": "images/gallery/1000084497-1795432783233.png",
       "active": true
+    },
+    {
+      "id": "gallery-1795433275245",
+      "category": "plants",
+      "title": {
+        "en": "Gonika",
+        "si": "ගොනිකා",
+        "ta": ""
+      },
+      "date": "",
+      "note": {
+        "en": "",
+        "si": "",
+        "ta": ""
+      },
+      "image": "images/gallery/1000084500-1795433272513.jpg",
+      "active": true
     }
   ]
 }
