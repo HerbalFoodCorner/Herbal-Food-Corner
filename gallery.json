@@ -186,6 +186,23 @@
       },
       "image": "images/gallery/1000084508-1795435366612.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1795436031008",
+      "category": "plants",
+      "title": {
+        "en": "Karapincha / Curry Leaves",
+        "si": "කරපිංචා",
+        "ta": "கருவேப்பிலை"
+      },
+      "date": "",
+      "note": {
+        "en": "",
+        "si": "",
+        "ta": ""
+      },
+      "image": "images/gallery/1000084518-1795436027319.jpg",
+      "active": true
     }
   ]
 }
