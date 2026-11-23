@@ -135,6 +135,23 @@
       },
       "image": "images/gallery/1000084500-1795433272513.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1795433336976",
+      "category": "plants",
+      "title": {
+        "en": "Monarakudumbiya",
+        "si": "මොණරකුඩුම්බිය",
+        "ta": ""
+      },
+      "date": "",
+      "note": {
+        "en": "",
+        "si": "",
+        "ta": ""
+      },
+      "image": "images/gallery/1000084501-1795433334134.jpg",
+      "active": true
     }
   ]
 }
