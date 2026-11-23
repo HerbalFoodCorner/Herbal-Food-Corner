@@ -101,6 +101,23 @@
       },
       "image": "images/gallery/1000084492-1795432684552.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1795432785910",
+      "category": "plants",
+      "title": {
+        "en": "Yaki Narang",
+        "si": "යකිනාරන්",
+        "ta": ""
+      },
+      "date": "",
+      "note": {
+        "en": "",
+        "si": "",
+        "ta": ""
+      },
+      "image": "images/gallery/1000084497-1795432783233.png",
+      "active": true
     }
   ]
 }
