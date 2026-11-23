@@ -67,6 +67,23 @@
       },
       "image": "images/gallery/1000084493-1795432593365.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1795432623645",
+      "category": "plants",
+      "title": {
+        "en": "Gotukola",
+        "si": "ගොටුකොළ",
+        "ta": ""
+      },
+      "date": "",
+      "note": {
+        "en": "",
+        "si": "",
+        "ta": ""
+      },
+      "image": "images/gallery/1000084491-1795432621103.jpg",
+      "active": true
     }
   ]
 }
