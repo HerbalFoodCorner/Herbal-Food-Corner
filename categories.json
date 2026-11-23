@@ -13,6 +13,13 @@
       "name_si": "ආහාර",
       "name_ta": "உணவு",
       "active": true
+    },
+    {
+      "id": "cat-1795442162981",
+      "name_en": "Mix Herbal Porridge",
+      "name_si": "මිශ්‍ර කැඳ වර්ඟ",
+      "name_ta": "கலவை கஞ்சி வகைகள்",
+      "active": true
     }
   ]
 }
