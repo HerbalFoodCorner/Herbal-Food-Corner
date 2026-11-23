@@ -50,6 +50,23 @@
       },
       "image": "images/gallery/1000084490-1795432002109.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1795432598163",
+      "category": "plants",
+      "title": {
+        "en": "Hathawariya",
+        "si": "හාතවාරිය",
+        "ta": ""
+      },
+      "date": "",
+      "note": {
+        "en": "",
+        "si": "",
+        "ta": ""
+      },
+      "image": "images/gallery/1000084493-1795432593365.jpg",
+      "active": true
     }
   ]
 }
