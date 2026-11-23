@@ -152,6 +152,23 @@
       },
       "image": "images/gallery/1000084501-1795434754310.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1795435220327",
+      "category": "plants",
+      "title": {
+        "en": "Kovakka / Ivy Gourd",
+        "si": "කෝවක්කා",
+        "ta": "கோவைக்காய்"
+      },
+      "date": "",
+      "note": {
+        "en": "",
+        "si": "",
+        "ta": ""
+      },
+      "image": "images/gallery/1000084507-1795435217460.jpg",
+      "active": true
     }
   ]
 }
