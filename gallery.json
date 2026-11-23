@@ -33,6 +33,23 @@
       },
       "image": "images/gallery/1000083730-1795164100742.jpg",
       "active": true
+    },
+    {
+      "id": "gallery-1795432005114",
+      "category": "plants",
+      "title": {
+        "en": "Neeramulliya",
+        "si": "නීරමුල්ලිය",
+        "ta": "நீர்முள்ளி"
+      },
+      "date": "",
+      "note": {
+        "en": "",
+        "si": "",
+        "ta": ""
+      },
+      "image": "images/gallery/1000084490-1795432002109.jpg",
+      "active": true
     }
   ]
 }
